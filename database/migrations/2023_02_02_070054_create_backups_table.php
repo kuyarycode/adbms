@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      *
@@ -15,9 +14,14 @@ return new class extends Migration
     {
         Schema::create('backups', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->foreignUuid('connection_id')->constrained('connections')->cascadeOnUpdate()->cascadeOnUpdate();
+            $table
+                ->foreignUuid('connection_id')
+                ->constrained('connections')
+                ->cascadeOnUpdate()
+                ->cascadeOnUpdate();
             $table->string('storage_path');
             $table->tinyInteger('status')->default(false);
+            $table->string('frequency');
             $table->string('message');
             $table->softDeletes();
             $table->timestamps();

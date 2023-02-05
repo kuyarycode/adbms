@@ -58,6 +58,13 @@ class ConnectionController extends Controller
     {
         $connection = Connection::find($connectionId);
 
+        if(!$connection){
+            return redirect()->route('connections')->with('flash', [
+                'message' => 'Connection not exists',
+                'success' => false
+            ]);
+        }
+
         $connection->connected = TestConnection::mysql(
             $connection->mysqldb_host,
             $connection->mysqldb_user,
@@ -146,6 +153,13 @@ class ConnectionController extends Controller
 
         $connection = Connection::find($connectionId);
 
+        if(!$connection){
+            return redirect()->route('connections')->with('flash', [
+                'message' => 'Connection not exists',
+                'success' => false
+            ]);
+        }
+
         $connection->name = $input['connection_name'];
         $connection->slug = $input['slug'];
         $connection->mysqldb_host = $input['mysqldb_host'];
@@ -168,6 +182,14 @@ class ConnectionController extends Controller
     public function delete_connection($connectionId)
     {
         $connection = Connection::find($connectionId);
+
+        if(!$connection){
+            return redirect()->route('connections')->with('flash', [
+                'message' => 'Connection not exists',
+                'success' => false
+            ]);
+        }
+
         $deleted = $connection;
         $connection->delete();
 

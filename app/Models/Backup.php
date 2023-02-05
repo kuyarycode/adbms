@@ -14,7 +14,7 @@ class Backup extends Model
     protected $keyType = 'string';
     public $incrementing = false;
 
-    protected $fields = ['connection_id', 'storage_path', 'status', 'message'];
+    protected $fields = ['connection_id', 'storage_path', 'frequency', 'status', 'message'];
 
     protected $casts = [
         'id' => 'string',

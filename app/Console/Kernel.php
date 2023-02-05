@@ -72,6 +72,7 @@ class Kernel extends ConsoleKernel
                             $retval == 0 ? $filename : 'No file generated';
 
                         $backup->message = $message;
+                        $backup->frequency = $connection->frequency;
                         $backup->status = $retval == 0;
                         $backup->save();
 

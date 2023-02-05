@@ -9,6 +9,7 @@ type Backup = {
     storage_path: string
     message: string
     status: boolean
+    frequency: string
     connection: Connection
     created_at: string
 }

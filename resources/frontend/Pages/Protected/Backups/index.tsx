@@ -8,7 +8,7 @@ import route from 'ziggy-js'
 import Backup from '@/Types/Backup'
 import Pagination from './Pagination'
 import { ErrorBag } from '@inertiajs/inertia'
-import { AiOutlineCheckCircle,  AiOutlineCloseCircle } from 'react-icons/ai'
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from 'react-icons/ai'
 
 export type PaginationLink = {
     url: string
@@ -122,6 +122,9 @@ export default function Backups({ backups, connection }: Props) {
                                         Message
                                     </th>
                                     <th scope="col" className="px-6 py-4 font-medium  text-gray-900">
+                                        Frequency
+                                    </th>
+                                    <th scope="col" className="px-6 py-4 font-medium  text-gray-900">
                                         Created&nbsp;At
                                     </th>
                                 </tr>
@@ -169,6 +172,9 @@ export default function Backups({ backups, connection }: Props) {
                                                 </td>
                                                 <td className="px-6 py-4 text-sm">
                                                     {backup.message}
+                                                </td>
+                                                <td className="px-6 py-4 text-sm">
+                                                    {backup.frequency}
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <div className="flex gap-2">

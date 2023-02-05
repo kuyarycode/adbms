@@ -15,6 +15,14 @@ class BackupController extends Controller
     public function drop_backup($backupId)
     {
         $backup = Backup::find($backupId);
+
+        if(!$backup){
+            return redirect()->route('connections')->with('flash', [
+                'message' => 'Backup not exists',
+                'success' => false
+            ]);
+        }
+
         $backup->connection;
 
         return Inertia::render('Protected/Backups/Drop', compact('backup'));
