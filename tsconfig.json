@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ES2021",
+        "module": "ESNext",
+        "jsx": "react",
+        "lib": ["ES2017", "ES2021", "DOM", "ES6", "WebWorker"],
+        "noImplicitAny": true,
+        "noImplicitUseStrict": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["resources/frontend/*"]
+        }
+    },
+    "include": ["resources/frontend", "resources/frontend/react-app.env.d.ts"],
+    "exclude": ["node_modules"]
+}

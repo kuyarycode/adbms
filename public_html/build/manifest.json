@@ -1,0 +1,210 @@
+{
+  "_Logo.js": {
+    "file": "assets/Logo.js",
+    "imports": [
+      "resources/frontend/main.tsx"
+    ]
+  },
+  "_ProtectedLayout.js": {
+    "file": "assets/ProtectedLayout.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_Logo.js",
+      "_index.esm.js",
+      "_transition.js"
+    ]
+  },
+  "_PublicLayout.js": {
+    "file": "assets/PublicLayout.js",
+    "imports": [
+      "resources/frontend/main.tsx"
+    ]
+  },
+  "_dialog.js": {
+    "file": "assets/dialog.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_transition.js"
+    ]
+  },
+  "_index.esm.js": {
+    "file": "assets/index.esm.js",
+    "imports": [
+      "_Logo.js"
+    ]
+  },
+  "_transition.js": {
+    "file": "assets/transition.js",
+    "imports": [
+      "resources/frontend/main.tsx"
+    ]
+  },
+  "resources/frontend/Assets/spinner.svg": {
+    "file": "assets/spinner.svg",
+    "src": "resources/frontend/Assets/spinner.svg"
+  },
+  "resources/frontend/Pages/Auth/Email/Verify.tsx": {
+    "file": "assets/Verify.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_PublicLayout.js",
+      "_Logo.js",
+      "_index.esm.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Auth/Email/Verify.tsx"
+  },
+  "resources/frontend/Pages/Auth/Login.tsx": {
+    "file": "assets/Login.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_PublicLayout.js",
+      "_Logo.js",
+      "_index.esm.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Auth/Login.tsx"
+  },
+  "resources/frontend/Pages/Auth/Password/Forget.tsx": {
+    "file": "assets/Forget.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_PublicLayout.js",
+      "_Logo.js",
+      "_index.esm.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Auth/Password/Forget.tsx"
+  },
+  "resources/frontend/Pages/Auth/Password/Reset.tsx": {
+    "file": "assets/Reset.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_PublicLayout.js",
+      "_Logo.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Auth/Password/Reset.tsx"
+  },
+  "resources/frontend/Pages/Auth/Register.tsx": {
+    "file": "assets/Register.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_PublicLayout.js",
+      "_Logo.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Auth/Register.tsx"
+  },
+  "resources/frontend/Pages/Home.tsx": {
+    "file": "assets/Home.js",
+    "imports": [
+      "resources/frontend/main.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Home.tsx"
+  },
+  "resources/frontend/Pages/Protected/Backups/Drop.tsx": {
+    "file": "assets/Drop.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_transition.js",
+      "_dialog.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Protected/Backups/Drop.tsx"
+  },
+  "resources/frontend/Pages/Protected/Backups/Pagination.tsx": {
+    "file": "assets/Pagination.js",
+    "imports": [
+      "resources/frontend/main.tsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Protected/Backups/Pagination.tsx"
+  },
+  "resources/frontend/Pages/Protected/Backups/index.tsx": {
+    "file": "assets/index.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_ProtectedLayout.js",
+      "_Logo.js",
+      "resources/frontend/Pages/Protected/Backups/Pagination.tsx",
+      "_index.esm.js",
+      "_transition.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Protected/Backups/index.tsx"
+  },
+  "resources/frontend/Pages/Protected/Connections/Add.tsx": {
+    "file": "assets/Add.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_transition.js",
+      "_dialog.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Protected/Connections/Add.tsx"
+  },
+  "resources/frontend/Pages/Protected/Connections/Drop.tsx": {
+    "file": "assets/Drop2.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_transition.js",
+      "_dialog.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Protected/Connections/Drop.tsx"
+  },
+  "resources/frontend/Pages/Protected/Connections/Edit.tsx": {
+    "file": "assets/Edit.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_transition.js",
+      "_dialog.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Protected/Connections/Edit.tsx"
+  },
+  "resources/frontend/Pages/Protected/Connections/index.tsx": {
+    "file": "assets/index2.js",
+    "imports": [
+      "resources/frontend/main.tsx",
+      "_ProtectedLayout.js",
+      "_Logo.js",
+      "_index.esm.js",
+      "_transition.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/frontend/Pages/Protected/Connections/index.tsx"
+  },
+  "resources/frontend/main.css": {
+    "file": "assets/main.css",
+    "src": "resources/frontend/main.css"
+  },
+  "resources/frontend/main.tsx": {
+    "assets": [
+      "assets/spinner.svg"
+    ],
+    "css": [
+      "assets/main.css"
+    ],
+    "dynamicImports": [
+      "resources/frontend/Pages/Home.tsx",
+      "resources/frontend/Pages/Auth/Login.tsx",
+      "resources/frontend/Pages/Auth/Register.tsx",
+      "resources/frontend/Pages/Auth/Email/Verify.tsx",
+      "resources/frontend/Pages/Auth/Password/Forget.tsx",
+      "resources/frontend/Pages/Auth/Password/Reset.tsx",
+      "resources/frontend/Pages/Protected/Backups/Drop.tsx",
+      "resources/frontend/Pages/Protected/Backups/index.tsx",
+      "resources/frontend/Pages/Protected/Backups/Pagination.tsx",
+      "resources/frontend/Pages/Protected/Connections/Add.tsx",
+      "resources/frontend/Pages/Protected/Connections/Drop.tsx",
+      "resources/frontend/Pages/Protected/Connections/Edit.tsx",
+      "resources/frontend/Pages/Protected/Connections/index.tsx"
+    ],
+    "file": "assets/main.js",
+    "isEntry": true,
+    "src": "resources/frontend/main.tsx"
+  }
+}
