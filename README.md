@@ -3,4 +3,3 @@
 # Technologies
 - Laravel & ReactJs
 - Sass & TailwindCss
-- 
